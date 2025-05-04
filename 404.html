@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Spring Framework講座</title><meta name="description" content="Spring Frameworkを基礎から学ぶ講座です。">
+    <link rel="preload" href="/spring-framework-lesson/assets/style-BqV4OCKM.css" as="style"><link rel="stylesheet" href="/spring-framework-lesson/assets/style-BqV4OCKM.css">
+    <link rel="modulepreload" href="/spring-framework-lesson/assets/app-DHpMs0Dc.js"><link rel="modulepreload" href="/spring-framework-lesson/assets/404.html-BNfUlTiH.js">
+    <link rel="prefetch" href="/spring-framework-lesson/assets/index.html-rCbgWR4c.js" as="script"><link rel="prefetch" href="/spring-framework-lesson/assets/introduction.html-B8myySrY.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-8b360b33><main class="page" data-v-8b360b33><div vp-content data-v-8b360b33><h1 data-v-8b360b33>404</h1><blockquote data-v-8b360b33>There&#39;s nothing here.</blockquote><a class="route-link" href="/spring-framework-lesson/" data-v-8b360b33>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/spring-framework-lesson/assets/app-DHpMs0Dc.js" defer></script>
+  </body>
+</html>
