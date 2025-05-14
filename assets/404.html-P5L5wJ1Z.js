@@ -1,0 +1,1 @@
+import{_ as e,c as a,a as o,o as n}from"./app-7D_t-2dJ.js";const l={};function r(s,t){return n(),a("div",null,t[0]||(t[0]=[o("p",null,"404 Not Found",-1)]))}const _=e(l,[["render",r]]),d=JSON.parse('{"path":"/404.html","title":"","lang":"ja","frontmatter":{"layout":"NotFound"},"headers":[],"git":{},"filePathRelative":null}');export{_ as comp,d as data};
