@@ -1,10 +1,12 @@
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
-import fs from "node:fs"
+import { shikiPlugin } from "@vuepress/plugin-shiki";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import fs from "node:fs";
 
-const dirpath = "docs/lesson"
-const files = fs.readdirSync(dirpath)
+const dirpath = "docs/lesson";
+const files = fs.readdirSync(dirpath);
 
 /** @type import("@vuepress/theme-default").SidebarOptions */
 const sidebar = {
@@ -24,7 +26,23 @@ export default defineUserConfig({
     navbar: ["/"],
 
     sidebar: sidebar,
+
+    themePlugins: {
+      prismjs: false,
+    },
   }),
 
   bundler: viteBundler(),
+
+  head: [["link", { rel: "icon", href: "images/favicon.png" }]],
+
+  plugins: [
+    shikiPlugin({
+      theme: "github-light",
+      themes: { light: "github-light", dark: "github-dark" },
+    }),
+    mdEnhancePlugin({
+      plantuml: true,
+    }),
+  ],
 });
