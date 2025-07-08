@@ -22,6 +22,7 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     logo: "images/school_128dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg",
+    logoDark: "images/school_128dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg",
 
     navbar: ["/"],
 
@@ -40,6 +41,7 @@ export default defineUserConfig({
     shikiPlugin({
       theme: "github-light",
       themes: { light: "github-light", dark: "github-dark" },
+      codeBlockTitle: true,
     }),
     mdEnhancePlugin({
       plantuml: true,

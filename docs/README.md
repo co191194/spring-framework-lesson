@@ -2,6 +2,7 @@
 home: true
 title: Home
 heroImage: images/school_128dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.svg
+heroImageDark: images/school_128dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg
 actions:
   - text: はじめる
     link: lesson/00-introduction.html
