@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #2c3e50; }
+      .label { font: 16px sans-serif; fill: #34495e; }
+      .small-text { font: 14px sans-serif; fill: #7f8c8d; }
+      .box { fill: #ecf0f1; stroke: #3498db; stroke-width: 2; }
+      .framework-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .library-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .arrow { stroke: #e74c3c; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .arrow-reverse { stroke: #27ae60; stroke-width: 3; fill: none; marker-end: url(#arrowhead-green); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e74c3c" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#27ae60" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">フレームワーク vs ライブラリ</text>
+  
+  <!-- Library Section -->
+  <text x="200" y="70" text-anchor="middle" class="label" font-weight="bold">ライブラリ</text>
+  <rect x="70" y="90" width="100" height="80" class="library-box" rx="5"/>
+  <text x="120" y="120" text-anchor="middle" class="small-text">あなたの</text>
+  <text x="120" y="140" text-anchor="middle" class="small-text">コード</text>
+  <text x="120" y="160" text-anchor="middle" class="label" font-weight="bold">🧑‍💻</text>
+  
+  <rect x="250" y="90" width="100" height="80" class="library-box" rx="5"/>
+  <text x="300" y="120" text-anchor="middle" class="small-text">ライブラリ</text>
+  <text x="300" y="140" text-anchor="middle" class="small-text">の機能</text>
+  <text x="300" y="160" text-anchor="middle" class="label" font-weight="bold">📚</text>
+  
+  <!-- Arrow from your code to library -->
+  <path d="M 175 130 L 245 130" class="arrow"/>
+  <text x="210" y="110" text-anchor="middle" class="small-text" fill="#e74c3c">呼び出す</text>
+  
+  <text x="200" y="210" text-anchor="middle" class="small-text">開発者が主導権を持つ</text>
+  <text x="200" y="230" text-anchor="middle" class="small-text">制御の流れ: あなた → ライブラリ</text>
+  
+  <!-- Framework Section -->
+  <text x="600" y="70" text-anchor="middle" class="label" font-weight="bold">フレームワーク</text>
+  <rect x="470" y="90" width="100" height="80" class="framework-box" rx="5"/>
+  <text x="520" y="120" text-anchor="middle" class="small-text">フレーム</text>
+  <text x="520" y="140" text-anchor="middle" class="small-text">ワーク</text>
+  <text x="520" y="160" text-anchor="middle" class="label" font-weight="bold">🏗️</text>
+  
+  <rect x="650" y="90" width="100" height="80" class="framework-box" rx="5"/>
+  <text x="700" y="120" text-anchor="middle" class="small-text">あなたの</text>
+  <text x="700" y="140" text-anchor="middle" class="small-text">コード</text>
+  <text x="700" y="160" text-anchor="middle" class="label" font-weight="bold">🧑‍💻</text>
+  
+  <!-- Arrow from framework to your code -->
+  <path d="M 575 130 L 645 130" class="arrow-reverse"/>
+  <text x="610" y="110" text-anchor="middle" class="small-text" fill="#27ae60">呼び出す</text>
+  
+  <text x="600" y="210" text-anchor="middle" class="small-text">フレームワークが主導権を持つ</text>
+  <text x="600" y="230" text-anchor="middle" class="small-text">制御の流れ: フレームワーク → あなた</text>
+  
+  <!-- Bottom explanation -->
+  <rect x="50" y="270" width="700" height="100" fill="#f8f9fa" stroke="#95a5a6" stroke-width="1" rx="5"/>
+  <text x="400" y="295" text-anchor="middle" class="label" font-weight="bold">制御の反転（Inversion of Control）</text>
+  <text x="400" y="320" text-anchor="middle" class="small-text">ライブラリ：必要な時に「あなたが」ライブラリの機能を呼び出す</text>
+  <text x="400" y="345" text-anchor="middle" class="small-text">フレームワーク：「フレームワークが」あなたのコードを呼び出す</text>
+</svg>

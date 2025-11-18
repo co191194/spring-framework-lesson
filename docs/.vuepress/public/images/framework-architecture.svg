@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #2c3e50; }
+      .label { font: 15px sans-serif; fill: #34495e; }
+      .small-text { font: 13px sans-serif; fill: #7f8c8d; }
+      .framework-layer { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .app-layer { fill: #fff9c4; stroke: #f57f17; stroke-width: 2; }
+      .feature-box { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 1.5; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" class="title">フレームワークの構造</text>
+  
+  <!-- Framework Foundation -->
+  <rect x="50" y="60" width="600" height="100" class="framework-layer" rx="8"/>
+  <text x="350" y="85" text-anchor="middle" class="label" font-weight="bold">🏗️ フレームワーク（基盤）</text>
+  <text x="350" y="105" text-anchor="middle" class="small-text">開発に必要な機能と構造を提供</text>
+  
+  <!-- Framework Features -->
+  <rect x="70" y="120" width="130" height="30" class="feature-box" rx="5"/>
+  <text x="135" y="140" text-anchor="middle" class="small-text">🔒 セキュリティ</text>
+  
+  <rect x="220" y="120" width="130" height="30" class="feature-box" rx="5"/>
+  <text x="285" y="140" text-anchor="middle" class="small-text">💾 DB接続</text>
+  
+  <rect x="370" y="120" width="130" height="30" class="feature-box" rx="5"/>
+  <text x="435" y="140" text-anchor="middle" class="small-text">🌐 HTTP処理</text>
+  
+  <rect x="520" y="120" width="110" height="30" class="feature-box" rx="5"/>
+  <text x="575" y="140" text-anchor="middle" class="small-text">✅ テスト</text>
+  
+  <!-- Arrow -->
+  <path d="M 350 165 L 350 195" stroke="#9e9e9e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#9e9e9e" />
+    </marker>
+  </defs>
+  
+  <!-- Your Application -->
+  <rect x="50" y="200" width="600" height="80" class="app-layer" rx="8"/>
+  <text x="350" y="225" text-anchor="middle" class="label" font-weight="bold">🧑‍💻 あなたが開発するアプリケーション</text>
+  <text x="350" y="245" text-anchor="middle" class="small-text">フレームワークの機能を組み合わせて実装</text>
+  <text x="350" y="265" text-anchor="middle" class="small-text">ビジネスロジックに集中できる</text>
+  
+  <!-- Bottom explanation boxes -->
+  <text x="350" y="310" text-anchor="middle" class="label" font-weight="bold">フレームワークが提供する主な機能</text>
+  
+  <!-- Feature 1 -->
+  <rect x="50" y="330" width="190" height="100" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="145" y="355" text-anchor="middle" class="label" font-weight="bold">基本機能</text>
+  <text x="145" y="375" text-anchor="middle" class="small-text">• HTTP リクエスト処理</text>
+  <text x="145" y="393" text-anchor="middle" class="small-text">• ルーティング</text>
+  <text x="145" y="411" text-anchor="middle" class="small-text">• セッション管理</text>
+  
+  <!-- Feature 2 -->
+  <rect x="260" y="330" width="190" height="100" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="5"/>
+  <text x="355" y="355" text-anchor="middle" class="label" font-weight="bold">データ処理</text>
+  <text x="355" y="375" text-anchor="middle" class="small-text">• ORM（DB操作）</text>
+  <text x="355" y="393" text-anchor="middle" class="small-text">• トランザクション</text>
+  <text x="355" y="411" text-anchor="middle" class="small-text">• バリデーション</text>
+  
+  <!-- Feature 3 -->
+  <rect x="470" y="330" width="180" height="100" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+  <text x="560" y="355" text-anchor="middle" class="label" font-weight="bold">開発支援</text>
+  <text x="560" y="375" text-anchor="middle" class="small-text">• 依存性注入(DI)</text>
+  <text x="560" y="393" text-anchor="middle" class="small-text">• ロギング</text>
+  <text x="560" y="411" text-anchor="middle" class="small-text">• 設定管理</text>
+</svg>
