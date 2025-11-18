@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #2c3e50; }
+      .label { font: 16px sans-serif; fill: #34495e; }
+      .small-text { font: 13px sans-serif; fill: #7f8c8d; }
+      .layer-box { stroke-width: 2; }
+      .presentation { fill: #e3f2fd; stroke: #2196f3; }
+      .application { fill: #fff3e0; stroke: #ff9800; }
+      .data { fill: #f3e5f5; stroke: #9c27b0; }
+      .arrow { stroke: #424242; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#424242" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Webアプリケーションの3層構造</text>
+  
+  <!-- Browser/Client -->
+  <rect x="50" y="60" width="220" height="100" fill="#f5f5f5" stroke="#9e9e9e" stroke-width="2" rx="8"/>
+  <text x="160" y="85" text-anchor="middle" class="label" font-weight="bold">🌐 ブラウザ（クライアント）</text>
+  <text x="160" y="110" text-anchor="middle" class="small-text">Chrome, Safari, Firefox, Edge</text>
+  <text x="160" y="130" text-anchor="middle" class="small-text">ユーザーが操作</text>
+  <text x="160" y="150" text-anchor="middle" class="small-text">画面表示</text>
+  
+  <!-- Arrow: Browser to Presentation -->
+  <path d="M 270 110 L 320 110" class="arrow"/>
+  <text x="295" y="105" text-anchor="middle" class="small-text">リクエスト</text>
+  <path d="M 320 130 L 270 130" class="arrow"/>
+  <text x="295" y="145" text-anchor="middle" class="small-text">レスポンス</text>
+  
+  <!-- Layer 1: Presentation -->
+  <rect x="320" y="60" width="430" height="100" class="layer-box presentation" rx="8"/>
+  <text x="535" y="85" text-anchor="middle" class="label" font-weight="bold">プレゼンテーション層（フロントエンド）</text>
+  <text x="535" y="110" text-anchor="middle" class="small-text">HTML, CSS, JavaScript</text>
+  <text x="535" y="130" text-anchor="middle" class="small-text">React, Vue.js, Angular など</text>
+  <text x="535" y="150" text-anchor="middle" class="small-text">役割: ユーザーインターフェース、画面表示</text>
+  
+  <!-- Arrow: Presentation to Application -->
+  <path d="M 535 160 L 535 200" class="arrow"/>
+  <text x="565" y="185" text-anchor="start" class="small-text">HTTP/HTTPS</text>
+  
+  <!-- Layer 2: Application -->
+  <rect x="320" y="200" width="430" height="100" class="layer-box application" rx="8"/>
+  <text x="535" y="225" text-anchor="middle" class="label" font-weight="bold">アプリケーション層（バックエンド）</text>
+  <text x="535" y="250" text-anchor="middle" class="small-text">Java (Spring), Python (Django), Node.js など</text>
+  <text x="535" y="270" text-anchor="middle" class="small-text">役割: ビジネスロジック、認証、API提供</text>
+  <text x="535" y="290" text-anchor="middle" class="small-text" font-weight="bold" fill="#f57c00">← Spring Frameworkはここ</text>
+  
+  <!-- Arrow: Application to Data -->
+  <path d="M 535 300 L 535 340" class="arrow"/>
+  <text x="565" y="325" text-anchor="start" class="small-text">SQL/NoSQL</text>
+  
+  <!-- Layer 3: Data -->
+  <rect x="320" y="340" width="430" height="100" class="layer-box data" rx="8"/>
+  <text x="535" y="365" text-anchor="middle" class="label" font-weight="bold">データ層（データベース）</text>
+  <text x="535" y="390" text-anchor="middle" class="small-text">MySQL, PostgreSQL, MongoDB, Oracle など</text>
+  <text x="535" y="410" text-anchor="middle" class="small-text">役割: データの永続化、保存・検索</text>
+  <text x="535" y="430" text-anchor="middle" class="small-text">ユーザー情報、商品情報、注文履歴など</text>
+  
+  <!-- Example flow -->
+  <rect x="50" y="460" width="700" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="5"/>
+  <text x="400" y="480" text-anchor="middle" class="small-text">例: ログイン処理 → プレゼンテーション層（ID/PW入力）→ アプリケーション層（認証処理）→ データ層（ユーザー情報照合）</text>
+</svg>

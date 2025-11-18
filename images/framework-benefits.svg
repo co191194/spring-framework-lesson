@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <style>
+      .title { font: bold 22px sans-serif; fill: #2c3e50; }
+      .label { font: 16px sans-serif; fill: #34495e; }
+      .small-text { font: 13px sans-serif; fill: #7f8c8d; }
+      .benefit-box { fill: #e8f5e9; stroke: #4caf50; stroke-width: 2; }
+      .icon { font: 28px sans-serif; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" class="title">フレームワークを使う8つのメリット</text>
+  
+  <!-- Row 1 -->
+  <!-- Benefit 1: Development Efficiency -->
+  <rect x="20" y="60" width="180" height="100" class="benefit-box" rx="8"/>
+  <text x="110" y="90" text-anchor="middle" class="icon">⚡</text>
+  <text x="110" y="115" text-anchor="middle" class="label" font-weight="bold">開発の効率化</text>
+  <text x="110" y="135" text-anchor="middle" class="small-text">開発時間</text>
+  <text x="110" y="150" text-anchor="middle" class="small-text">30〜50%削減</text>
+  
+  <!-- Benefit 2: Security -->
+  <rect x="220" y="60" width="180" height="100" class="benefit-box" rx="8"/>
+  <text x="310" y="90" text-anchor="middle" class="icon">🔒</text>
+  <text x="310" y="115" text-anchor="middle" class="label" font-weight="bold">セキュリティ</text>
+  <text x="310" y="135" text-anchor="middle" class="small-text">脆弱性対策が</text>
+  <text x="310" y="150" text-anchor="middle" class="small-text">標準装備</text>
+  
+  <!-- Benefit 3: Consistency -->
+  <rect x="420" y="60" width="180" height="100" class="benefit-box" rx="8"/>
+  <text x="510" y="90" text-anchor="middle" class="icon">📐</text>
+  <text x="510" y="115" text-anchor="middle" class="label" font-weight="bold">一貫性</text>
+  <text x="510" y="135" text-anchor="middle" class="small-text">統一された</text>
+  <text x="510" y="150" text-anchor="middle" class="small-text">設計パターン</text>
+  
+  <!-- Benefit 4: Maintainability -->
+  <rect x="620" y="60" width="160" height="100" class="benefit-box" rx="8"/>
+  <text x="700" y="90" text-anchor="middle" class="icon">🔧</text>
+  <text x="700" y="115" text-anchor="middle" class="label" font-weight="bold">保守性</text>
+  <text x="700" y="135" text-anchor="middle" class="small-text">コード量</text>
+  <text x="700" y="150" text-anchor="middle" class="small-text">30〜70%削減</text>
+  
+  <!-- Row 2 -->
+  <!-- Benefit 5: Testability -->
+  <rect x="20" y="180" width="180" height="100" class="benefit-box" rx="8"/>
+  <text x="110" y="210" text-anchor="middle" class="icon">✅</text>
+  <text x="110" y="235" text-anchor="middle" class="label" font-weight="bold">テスト容易性</text>
+  <text x="110" y="255" text-anchor="middle" class="small-text">テストツール</text>
+  <text x="110" y="270" text-anchor="middle" class="small-text">標準提供</text>
+  
+  <!-- Benefit 6: Team Development -->
+  <rect x="220" y="180" width="180" height="100" class="benefit-box" rx="8"/>
+  <text x="310" y="210" text-anchor="middle" class="icon">👥</text>
+  <text x="310" y="235" text-anchor="middle" class="label" font-weight="bold">チーム開発</text>
+  <text x="310" y="255" text-anchor="middle" class="small-text">新メンバーが</text>
+  <text x="310" y="270" text-anchor="middle" class="small-text">素早く参加</text>
+  
+  <!-- Benefit 7: Best Practices -->
+  <rect x="420" y="180" width="180" height="100" class="benefit-box" rx="8"/>
+  <text x="510" y="210" text-anchor="middle" class="icon">⭐</text>
+  <text x="510" y="235" text-anchor="middle" class="label" font-weight="bold">ベストプラクティス</text>
+  <text x="510" y="255" text-anchor="middle" class="small-text">業界標準の</text>
+  <text x="510" y="270" text-anchor="middle" class="small-text">設計を実現</text>
+  
+  <!-- Benefit 8: Rich Resources -->
+  <rect x="620" y="180" width="160" height="100" class="benefit-box" rx="8"/>
+  <text x="700" y="210" text-anchor="middle" class="icon">📚</text>
+  <text x="700" y="235" text-anchor="middle" class="label" font-weight="bold">豊富な情報</text>
+  <text x="700" y="255" text-anchor="middle" class="small-text">ドキュメント</text>
+  <text x="700" y="270" text-anchor="middle" class="small-text">コミュニティ</text>
+
+</svg>

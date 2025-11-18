@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #2c3e50; }
+      .subtitle { font: bold 16px sans-serif; fill: #34495e; }
+      .label { font: 14px sans-serif; fill: #34495e; }
+      .small-text { font: 12px sans-serif; fill: #7f8c8d; }
+      .render-box { stroke-width: 2; }
+      .csr-box { fill: #e3f2fd; stroke: #2196f3; }
+      .ssr-box { fill: #fff3e0; stroke: #ff9800; }
+      .ssg-box { fill: #e8f5e9; stroke: #4caf50; }
+      .isr-box { fill: #f3e5f5; stroke: #9c27b0; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">レンダリング方式の比較</text>
+  
+  <!-- CSR -->
+  <rect x="30" y="60" width="400" height="130" class="render-box csr-box" rx="8"/>
+  <text x="230" y="85" text-anchor="middle" class="subtitle">CSR (Client-Side Rendering)</text>
+  <text x="230" y="110" text-anchor="middle" class="small-text">🌐 ブラウザ側でHTML生成</text>
+  <text x="50" y="135" class="small-text">✅ 動的UI、スムーズなページ遷移</text>
+  <text x="50" y="155" class="small-text">❌ SEO難、初回表示遅い</text>
+  <text x="50" y="175" class="small-text">📱 用途: Gmail, Google Maps, 管理画面</text>
+  
+  <!-- SSR -->
+  <rect x="470" y="60" width="400" height="130" class="render-box ssr-box" rx="8"/>
+  <text x="670" y="85" text-anchor="middle" class="subtitle">SSR (Server-Side Rendering)</text>
+  <text x="670" y="110" text-anchor="middle" class="small-text">🖥️ サーバー側でHTML生成</text>
+  <text x="490" y="135" class="small-text">✅ SEO強い、初期表示速い</text>
+  <text x="490" y="155" class="small-text">❌ サーバー負荷高い、ページ遷移遅い</text>
+  <text x="490" y="175" class="small-text">📱 用途: ECサイト, SNS, ニュースサイト</text>
+  
+  <!-- SSG -->
+  <rect x="30" y="220" width="400" height="130" class="render-box ssg-box" rx="8"/>
+  <text x="230" y="245" text-anchor="middle" class="subtitle">SSG (Static Site Generation)</text>
+  <text x="230" y="270" text-anchor="middle" class="small-text">📦 ビルド時にHTML生成</text>
+  <text x="50" y="295" class="small-text">✅ 超高速、SEO強い、サーバー負荷少</text>
+  <text x="50" y="315" class="small-text">❌ 動的データ不向き、更新に再ビルド必要</text>
+  <text x="50" y="335" class="small-text">📱 用途: ブログ, ドキュメント, LPサイト</text>
+  
+  <!-- ISR -->
+  <rect x="470" y="220" width="400" height="130" class="render-box isr-box" rx="8"/>
+  <text x="670" y="245" text-anchor="middle" class="subtitle">ISR (Incremental Static Regeneration)</text>
+  <text x="670" y="270" text-anchor="middle" class="small-text">🔄 SSG + 必要時に再生成</text>
+  <text x="490" y="295" class="small-text">✅ 高速 + 動的対応、SEO強い</text>
+  <text x="490" y="315" class="small-text">❌ 設定複雑、即時反映不可</text>
+  <text x="490" y="335" class="small-text">📱 用途: 商品ページ, ニュース, ブログ</text>
+  
+  <!-- Timeline comparison -->
+  <text x="450" y="390" text-anchor="middle" class="subtitle">レンダリングタイミングの違い</text>
+  
+  <!-- CSR Timeline -->
+  <text x="50" y="420" class="label">CSR:</text>
+  <rect x="120" y="405" width="100" height="25" fill="#ffebee" stroke="#ef5350" stroke-width="1" rx="3"/>
+  <text x="170" y="422" text-anchor="middle" class="small-text">ブラウザ</text>
+  <text x="230" y="422" class="small-text">リクエスト時に毎回生成</text>
+  
+  <!-- SSR Timeline -->
+  <text x="50" y="455" class="label">SSR:</text>
+  <rect x="120" y="440" width="100" height="25" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="3"/>
+  <text x="170" y="457" text-anchor="middle" class="small-text">サーバー</text>
+  <text x="230" y="457" class="small-text">リクエスト時に毎回生成</text>
+  
+  <!-- SSG Timeline -->
+  <text x="50" y="490" class="label">SSG:</text>
+  <rect x="120" y="475" width="100" height="25" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="3"/>
+  <text x="170" y="492" text-anchor="middle" class="small-text">ビルド時</text>
+  <text x="230" y="492" class="small-text">デプロイ前に1回だけ生成</text>
+  
+  <!-- ISR Timeline -->
+  <text x="50" y="525" class="label">ISR:</text>
+  <rect x="120" y="510" width="100" height="25" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="170" y="527" text-anchor="middle" class="small-text">ビルド時</text>
+  <text x="230" y="527" class="small-text">+</text>
+  <rect x="250" y="510" width="120" height="25" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1" rx="3"/>
+  <text x="310" y="527" text-anchor="middle" class="small-text">期限切れ時再生成</text>
+  
+  <!-- Performance comparison -->
+  <rect x="30" y="560" width="840" height="75" fill="#f5f5f5" stroke="#9e9e9e" stroke-width="1" rx="8"/>
+  <text x="450" y="585" text-anchor="middle" class="subtitle">特性比較</text>
+  
+  <text x="50" y="605" class="small-text">初期表示:</text>
+  <text x="150" y="605" class="small-text">CSR ⭐⭐</text>
+  <text x="270" y="605" class="small-text">SSR ⭐⭐⭐⭐</text>
+  <text x="420" y="605" class="small-text">SSG ⭐⭐⭐⭐⭐</text>
+  <text x="590" y="605" class="small-text">ISR ⭐⭐⭐⭐⭐</text>
+  
+  <text x="50" y="625" class="small-text">SEO:</text>
+  <text x="150" y="625" class="small-text">CSR ⭐⭐</text>
+  <text x="270" y="625" class="small-text">SSR ⭐⭐⭐⭐⭐</text>
+  <text x="420" y="625" class="small-text">SSG ⭐⭐⭐⭐⭐</text>
+  <text x="590" y="625" class="small-text">ISR ⭐⭐⭐⭐⭐</text>
+</svg>

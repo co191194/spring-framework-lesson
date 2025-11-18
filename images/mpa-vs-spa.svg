@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font: bold 20px sans-serif; fill: #2c3e50; }
+      .subtitle { font: bold 16px sans-serif; fill: #34495e; }
+      .label { font: 14px sans-serif; fill: #34495e; }
+      .small-text { font: 12px sans-serif; fill: #7f8c8d; }
+      .mpa-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .spa-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .arrow { stroke: #424242; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#424242" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">MPA vs SPA の違い</text>
+  
+  <!-- MPA Section -->
+  <text x="200" y="65" text-anchor="middle" class="subtitle">MPA (Multi-Page Application)</text>
+  
+  <!-- MPA Structure -->
+  <rect x="50" y="80" width="300" height="180" class="mpa-box" rx="8"/>
+  <text x="200" y="105" text-anchor="middle" class="label">複数のHTMLファイル</text>
+  
+  <!-- MPA Pages -->
+  <rect x="70" y="120" width="80" height="60" fill="#ffffff" stroke="#2196f3" stroke-width="1" rx="4"/>
+  <text x="110" y="140" text-anchor="middle" class="small-text">index.html</text>
+  <text x="110" y="158" text-anchor="middle" class="small-text">🏠</text>
+  <text x="110" y="172" text-anchor="middle" class="small-text" font-size="10">トップ</text>
+  
+  <rect x="160" y="120" width="80" height="60" fill="#ffffff" stroke="#2196f3" stroke-width="1" rx="4"/>
+  <text x="200" y="140" text-anchor="middle" class="small-text">about.html</text>
+  <text x="200" y="158" text-anchor="middle" class="small-text">📄</text>
+  <text x="200" y="172" text-anchor="middle" class="small-text" font-size="10">会社概要</text>
+  
+  <rect x="250" y="120" width="80" height="60" fill="#ffffff" stroke="#2196f3" stroke-width="1" rx="4"/>
+  <text x="290" y="140" text-anchor="middle" class="small-text">contact.html</text>
+  <text x="290" y="158" text-anchor="middle" class="small-text">✉️</text>
+  <text x="290" y="172" text-anchor="middle" class="small-text" font-size="10">お問合せ</text>
+  
+  <text x="200" y="205" text-anchor="middle" class="small-text">ページ遷移ごとに</text>
+  <text x="200" y="220" text-anchor="middle" class="small-text">新しいHTMLを読み込み</text>
+  <path d="M 110 190 L 200 205 M 200 190 L 200 205 M 290 190 L 200 205" stroke="#2196f3" stroke-width="1.5" fill="none"/>
+  
+  <text x="200" y="245" text-anchor="middle" class="small-text" font-weight="bold">✅ SEO強い、シンプル</text>
+  <text x="200" y="258" text-anchor="middle" class="small-text" font-weight="bold">❌ ページ遷移遅い</text>
+  
+  <!-- SPA Section -->
+  <text x="600" y="65" text-anchor="middle" class="subtitle">SPA (Single-Page Application)</text>
+  
+  <!-- SPA Structure -->
+  <rect x="450" y="80" width="300" height="180" class="spa-box" rx="8"/>
+  <text x="600" y="105" text-anchor="middle" class="label">単一のHTMLファイル</text>
+  
+  <!-- SPA Single Page -->
+  <rect x="520" y="120" width="160" height="80" fill="#ffffff" stroke="#ff9800" stroke-width="2" rx="4"/>
+  <text x="600" y="140" text-anchor="middle" class="small-text">index.html</text>
+  <text x="600" y="160" text-anchor="middle" class="small-text">+ app.js</text>
+  <text x="600" y="180" text-anchor="middle" class="small-text" font-size="10">JavaScriptで</text>
+  <text x="600" y="193" text-anchor="middle" class="small-text" font-size="10">動的に画面切り替え</text>
+  
+  <text x="600" y="220" text-anchor="middle" class="small-text">ページ遷移時は</text>
+  <text x="600" y="235" text-anchor="middle" class="small-text">JavaScriptで画面を書き換え</text>
+  
+  <text x="600" y="255" text-anchor="middle" class="small-text" font-weight="bold">✅ 高速、リッチUI</text>
+  <text x="600" y="268" text-anchor="middle" class="small-text" font-weight="bold">❌ SEO難、初回遅い</text>
+  
+  <!-- Page transition comparison -->
+  <text x="400" y="310" text-anchor="middle" class="subtitle">ページ遷移の仕組み</text>
+  
+  <!-- MPA transition -->
+  <text x="200" y="340" text-anchor="middle" class="label">MPA のページ遷移</text>
+  <rect x="50" y="355" width="300" height="120" fill="#f5f5f5" stroke="#2196f3" stroke-width="1" rx="5"/>
+  
+  <text x="70" y="375" class="small-text">1. リンククリック</text>
+  <path d="M 70 380 L 150 380" class="arrow"/>
+  
+  <text x="160" y="375" class="small-text">2. サーバーリクエスト</text>
+  <path d="M 160 380 L 240 380" class="arrow"/>
+  
+  <text x="70" y="405" class="small-text">3. 新しいHTML取得</text>
+  <path d="M 70 410 L 150 410" class="arrow"/>
+  
+  <text x="160" y="405" class="small-text">4. ページ全体を再描画</text>
+  
+  <text x="200" y="440" text-anchor="middle" class="small-text" fill="#d32f2f">⚠️ 画面がちらつく</text>
+  <text x="200" y="460" text-anchor="middle" class="small-text" fill="#d32f2f">サーバー通信で遅延</text>
+  
+  <!-- SPA transition -->
+  <text x="600" y="340" text-anchor="middle" class="label">SPA のページ遷移</text>
+  <rect x="450" y="355" width="300" height="120" fill="#f5f5f5" stroke="#ff9800" stroke-width="1" rx="5"/>
+  
+  <text x="470" y="375" class="small-text">1. リンククリック</text>
+  <path d="M 470 380 L 550 380" class="arrow"/>
+  
+  <text x="560" y="375" class="small-text">2. JavaScriptで</text>
+  <text x="585" y="390" class="small-text">画面を書き換え</text>
+  
+  <text x="470" y="415" class="small-text">3. 必要なデータのみ</text>
+  <text x="495" y="430" class="small-text">APIから取得</text>
+  
+  <text x="600" y="460" text-anchor="middle" class="small-text" fill="#2e7d32">✨ スムーズな遷移</text>
+</svg>
